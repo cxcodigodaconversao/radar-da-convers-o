@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações globais */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0c121c;
+  color: white;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a2332;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2bc8f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6d0a3;
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #d2bc8f #1a2332;
+}
+
+/* Seleção de texto */
+::selection {
+  background: rgba(210, 188, 143, 0.3);
+  color: white;
+}
+
+/* Títulos e Destaques */
+h1, h2, h3 {
+  color: #d2bc8f;
+}
+
+/* Parágrafos */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #d2bc8f;
+}
+
+em {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Listas */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Botões */
+button {
+  background: #d2bc8f;
+  color: #0c121c;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #e6d0a3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(210, 188, 143, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Inputs */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.75rem;
+  accent-color: #d2bc8f;
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+label:hover {
+  background-color: rgba(210, 188, 143, 0.1);
+}
+
+/* Focus states para acessibilidade */
+button:focus,
+input:focus {
+  outline: 2px solid #d2bc8f;
+  outline-offset: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+  
+  button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  button {
+    display: none;
+  }
+}
