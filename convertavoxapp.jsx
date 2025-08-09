@@ -546,7 +546,7 @@ export default function CXconversão() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
   const [expandedScripts, setExpandedScripts] = useState({});
-  const [viewMode, setViewMode] = useState({}); // 'objections', 'scripts' ou 'perguntas'
+  const [viewMode, setViewMode] = useState({});
 
   const handleCheck = (label, profile) => {
     const exists = selected.find((s) => s.label === label);
@@ -557,7 +557,6 @@ export default function CXconversão() {
     setExpandedProfiles((prev) =>
       prev.includes(profile) ? prev.filter((p) => p !== profile) : [...prev, profile]
     );
-    // Set default view mode to objections when first expanding
     if (!expandedProfiles.includes(profile) && !viewMode[profile]) {
       setViewMode(prev => ({ ...prev, [profile]: 'objections' }));
     }
@@ -714,7 +713,7 @@ export default function CXconversão() {
                 
                 {expandedProfiles.includes(profileKey) && (
                   <div style={{marginTop: '1.5rem'}}>
-                    {/* Botões para alternar entre as três opções */}
+                    {/* Botões para as TRÊS abas */}
                     <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap'}}>
                       <button 
                         onClick={() => toggleViewMode(profileKey, 'objections')}
