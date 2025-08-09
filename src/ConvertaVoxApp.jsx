@@ -20,6 +20,18 @@ const suggestions = {
     label: "🟥 Perfil Dominante",
     approach: "🎯 Seja direto, foque em resultado e ROI",
     trigger: "🔥 Resultados tangíveis, liderança, ganho de tempo",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "fazer a pessoa falar sobre resultados, desafios e metas sem enrolação",
+      caracteristicas: "Direto, Focado, Competitivo",
+      perguntas: [
+        "Qual foi a conquista mais importante que você teve nos últimos meses?",
+        "Se pudesse eliminar um obstáculo do seu negócio hoje, qual seria?",
+        "O que precisa acontecer para você considerar que esse ano foi excelente?",
+        "Qual o próximo grande objetivo que você quer bater — e por quê?",
+        "Onde você acha que está perdendo mais tempo ou dinheiro no momento?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa prática, impaciente e direta.",
@@ -139,6 +151,18 @@ const suggestions = {
     label: "🟨 Perfil Influente",
     approach: "🎯 Conecte com emoção e energia positiva",
     trigger: "🔥 Pertencimento, apoio, entusiasmo, reconhecimento",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "criar conexão emocional, explorar histórias e reconhecer o valor da pessoa",
+      caracteristicas: "Comunicativo, Entusiasta, Social",
+      perguntas: [
+        "O que mais te deixa animado no que você está fazendo hoje?",
+        "Qual foi o momento mais marcante do seu negócio até agora?",
+        "Se pudesse escolher, o que faria todos os dias porque ama?",
+        "Quem mais te inspira no que você faz — e por quê?",
+        "Como você imagina que seu negócio estará quando tudo estiver do jeito que sonha?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa carismática, criativa, expressiva e guiada por emoções, reconhecimento e conexão humana.",
@@ -257,6 +281,18 @@ const suggestions = {
     label: "🟩 Perfil Estável",
     approach: "🎯 Acolha, ofereça passo a passo e segurança",
     trigger: "🔥 Segurança, suporte, constância, processo claro",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "transmitir segurança, estimular confiança e falar sobre estabilidade e apoio",
+      caracteristicas: "Calmo, Colaborativo, Leal",
+      perguntas: [
+        "O que na sua rotina hoje te traz mais tranquilidade?",
+        "O que precisaria mudar para seu dia a dia ficar mais leve?",
+        "Teve alguma experiência que te deu segurança para seguir por um caminho específico?",
+        "O que é mais importante para você quando decide trabalhar com alguém?",
+        "Quais passos você gostaria de ver antes de tomar uma decisão importante?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa leal, gentil, colaborativa, com foco em segurança, previsibilidade e ambiente harmonioso.",
@@ -376,6 +412,18 @@ const suggestions = {
     label: "🟦 Perfil Conforme",
     approach: "🎯 Traga lógica, processo e prova social",
     trigger: "🔥 Dados, método validado, clareza técnica",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "estimular raciocínio lógico e coleta de dados, mostrando respeito pela análise",
+      caracteristicas: "Analítico, Detalhista, Preciso",
+      perguntas: [
+        "Quais métricas ou indicadores você acompanha com mais atenção hoje?",
+        "Que critérios você usa para decidir investir em algo novo?",
+        "Na sua visão, qual é o maior gargalo técnico ou estrutural no momento?",
+        "Você já mapeou os riscos e oportunidades do seu cenário atual?",
+        "Qual seria, para você, o processo ideal para resolver esse desafio?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa analítica, lógica, objetiva, exigente e crítica.",
@@ -498,7 +546,7 @@ export default function CXconversão() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
   const [expandedScripts, setExpandedScripts] = useState({});
-  const [viewMode, setViewMode] = useState({}); // 'objections' or 'scripts'
+  const [viewMode, setViewMode] = useState({}); // 'objections' or 'scripts' or 'perguntas'
 
   const handleCheck = (label, profile) => {
     const exists = selected.find((s) => s.label === label);
@@ -666,8 +714,8 @@ export default function CXconversão() {
                 
                 {expandedProfiles.includes(profileKey) && (
                   <div style={{marginTop: '1.5rem'}}>
-                    {/* Botões para alternar entre Objeções e Scripts */}
-                    <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem'}}>
+                    {/* Botões para alternar entre Objeções, Scripts e Perguntas */}
+                    <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap'}}>
                       <button 
                         onClick={() => toggleViewMode(profileKey, 'objections')}
                         style={{
@@ -697,6 +745,21 @@ export default function CXconversão() {
                         }}
                       >
                         📋 Script de Conexão
+                      </button>
+                      <button 
+                        onClick={() => toggleViewMode(profileKey, 'perguntas')}
+                        style={{
+                          background: viewMode[profileKey] === 'perguntas' ? '#d2bc8f' : '#666',
+                          color: viewMode[profileKey] === 'perguntas' ? '#0c121c' : 'white',
+                          border: 'none',
+                          padding: '0.75rem 1.5rem',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease'
+                        }}
+                      >
+                        🤔 Perguntas Abertas
                       </button>
                     </div>
 
@@ -758,6 +821,60 @@ export default function CXconversão() {
                             )}
                           </div>
                         ))}
+                      </div>
+                    )}
+
+                    {/* Seção de Perguntas Abertas */}
+                    {viewMode[profileKey] === 'perguntas' && (
+                      <div>
+                        <h3>🤔 {suggestion.perguntas_abertas.titulo}:</h3>
+                        <div style={{
+                          background: '#2a3441',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1.5rem',
+                          marginBottom: '1.5rem'
+                        }}>
+                          <div style={{marginBottom: '1rem'}}>
+                            <p><strong>🎯 Objetivo:</strong> {suggestion.perguntas_abertas.objetivo}</p>
+                            <p><strong>🔍 Características:</strong> {suggestion.perguntas_abertas.caracteristicas}</p>
+                          </div>
+                          
+                          <div>
+                            <strong style={{color: '#d2bc8f', fontSize: '1.1rem'}}>📝 Perguntas Estratégicas:</strong>
+                            <ul style={{marginTop: '1rem', listStyle: 'none', padding: 0}}>
+                              {suggestion.perguntas_abertas.perguntas.map((pergunta, idx) => (
+                                <li key={idx} style={{
+                                  background: '#1a2332',
+                                  borderLeft: '4px solid #d2bc8f',
+                                  padding: '1rem',
+                                  margin: '0.75rem 0',
+                                  borderRadius: '0 8px 8px 0',
+                                  fontSize: '1rem',
+                                  lineHeight: '1.5'
+                                }}>
+                                  <span style={{color: '#d2bc8f', fontWeight: 'bold', marginRight: '0.5rem'}}>
+                                    {idx + 1}.
+                                  </span>
+                                  <em>"{pergunta}"</em>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          
+                          <div style={{
+                            marginTop: '1.5rem',
+                            padding: '1rem',
+                            background: '#1a2332',
+                            borderRadius: '8px',
+                            border: '1px solid #333'
+                          }}>
+                            <strong style={{color: '#51cf66'}}>💡 Dica de Uso:</strong>
+                            <p style={{margin: '0.5rem 0 0 0', color: '#ccc'}}>
+                              Use estas perguntas para quebrar o gelo, criar conexão e entender as motivações profundas da pessoa antes de partir para o SPIN Selling.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     )}
 
