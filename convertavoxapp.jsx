@@ -546,7 +546,7 @@ export default function CXconversão() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
   const [expandedScripts, setExpandedScripts] = useState({});
-  const [viewMode, setViewMode] = useState({});
+  const [viewMode, setViewMode] = useState({}); // 'objections' or 'scripts' or 'perguntas'
 
   const handleCheck = (label, profile) => {
     const exists = selected.find((s) => s.label === label);
@@ -557,6 +557,7 @@ export default function CXconversão() {
     setExpandedProfiles((prev) =>
       prev.includes(profile) ? prev.filter((p) => p !== profile) : [...prev, profile]
     );
+    // Set default view mode to objections when first expanding
     if (!expandedProfiles.includes(profile) && !viewMode[profile]) {
       setViewMode(prev => ({ ...prev, [profile]: 'objections' }));
     }
