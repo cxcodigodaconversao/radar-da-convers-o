@@ -20,6 +20,18 @@ const suggestions = {
     label: "🟥 Perfil Dominante",
     approach: "🎯 Seja direto, foque em resultado e ROI",
     trigger: "🔥 Resultados tangíveis, liderança, ganho de tempo",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "fazer a pessoa falar sobre resultados, desafios e metas sem enrolação",
+      caracteristicas: "Direto, Focado, Competitivo",
+      perguntas: [
+        "Qual foi a conquista mais importante que você teve nos últimos meses?",
+        "Se pudesse eliminar um obstáculo do seu negócio hoje, qual seria?",
+        "O que precisa acontecer para você considerar que esse ano foi excelente?",
+        "Qual o próximo grande objetivo que você quer bater — e por quê?",
+        "Onde você acha que está perdendo mais tempo ou dinheiro no momento?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa prática, impaciente e direta.",
@@ -139,6 +151,18 @@ const suggestions = {
     label: "🟨 Perfil Influente",
     approach: "🎯 Conecte com emoção e energia positiva",
     trigger: "🔥 Pertencimento, apoio, entusiasmo, reconhecimento",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "criar conexão emocional, explorar histórias e reconhecer o valor da pessoa",
+      caracteristicas: "Comunicativo, Entusiasta, Social",
+      perguntas: [
+        "O que mais te deixa animado no que você está fazendo hoje?",
+        "Qual foi o momento mais marcante do seu negócio até agora?",
+        "Se pudesse escolher, o que faria todos os dias porque ama?",
+        "Quem mais te inspira no que você faz — e por quê?",
+        "Como você imagina que seu negócio estará quando tudo estiver do jeito que sonha?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa carismática, criativa, expressiva e guiada por emoções, reconhecimento e conexão humana.",
@@ -257,6 +281,18 @@ const suggestions = {
     label: "🟩 Perfil Estável",
     approach: "🎯 Acolha, ofereça passo a passo e segurança",
     trigger: "🔥 Segurança, suporte, constância, processo claro",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "transmitir segurança, estimular confiança e falar sobre estabilidade e apoio",
+      caracteristicas: "Calmo, Colaborativo, Leal",
+      perguntas: [
+        "O que na sua rotina hoje te traz mais tranquilidade?",
+        "O que precisaria mudar para seu dia a dia ficar mais leve?",
+        "Teve alguma experiência que te deu segurança para seguir por um caminho específico?",
+        "O que é mais importante para você quando decide trabalhar com alguém?",
+        "Quais passos você gostaria de ver antes de tomar uma decisão importante?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa leal, gentil, colaborativa, com foco em segurança, previsibilidade e ambiente harmonioso.",
@@ -376,6 +412,18 @@ const suggestions = {
     label: "🟦 Perfil Conforme",
     approach: "🎯 Traga lógica, processo e prova social",
     trigger: "🔥 Dados, método validado, clareza técnica",
+    perguntas_abertas: {
+      titulo: "Perguntas Abertas Estratégicas",
+      objetivo: "estimular raciocínio lógico e coleta de dados, mostrando respeito pela análise",
+      caracteristicas: "Analítico, Detalhista, Preciso",
+      perguntas: [
+        "Quais métricas ou indicadores você acompanha com mais atenção hoje?",
+        "Que critérios você usa para decidir investir em algo novo?",
+        "Na sua visão, qual é o maior gargalo técnico ou estrutural no momento?",
+        "Você já mapeou os riscos e oportunidades do seu cenário atual?",
+        "Qual seria, para você, o processo ideal para resolver esse desafio?"
+      ]
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa analítica, lógica, objetiva, exigente e crítica.",
@@ -498,7 +546,7 @@ export default function CXconversão() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
   const [expandedScripts, setExpandedScripts] = useState({});
-  const [viewMode, setViewMode] = useState({});
+  const [viewMode, setViewMode] = useState({}); // 'objections', 'scripts' ou 'perguntas'
 
   const handleCheck = (label, profile) => {
     const exists = selected.find((s) => s.label === label);
@@ -509,6 +557,7 @@ export default function CXconversão() {
     setExpandedProfiles((prev) =>
       prev.includes(profile) ? prev.filter((p) => p !== profile) : [...prev, profile]
     );
+    // Set default view mode to objections when first expanding
     if (!expandedProfiles.includes(profile) && !viewMode[profile]) {
       setViewMode(prev => ({ ...prev, [profile]: 'objections' }));
     }
@@ -542,20 +591,67 @@ export default function CXconversão() {
   const sortedProfiles = Object.keys(profileCount).sort((a, b) => profileCount[b] - profileCount[a]);
 
   return (
-    <div className="container">
-      <div className="title">CXconversão</div>
-      <p className="subtitle">Radar Comportamental em Calls 1:1</p>
+    <div style={{
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: '1rem',
+      backgroundColor: '#0c121c',
+      color: 'white',
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+      minHeight: '100vh'
+    }}>
+      <div style={{
+        textAlign: 'center',
+        fontSize: '2.5rem',
+        marginBottom: '0.5rem',
+        color: '#d2bc8f'
+      }}>
+        CXconversão
+      </div>
+      <p style={{
+        textAlign: 'center',
+        color: '#888',
+        fontSize: '1.2rem',
+        marginBottom: '2rem'
+      }}>
+        Radar Comportamental em Calls 1:1
+      </p>
 
       {/* Marcadores de Observação */}
-      <div className="card">
-        <h2>Marque os sinais observados durante a call:</h2>
-        <div className="markers-grid">
+      <div style={{
+        background: '#1a2332',
+        border: '1px solid #333',
+        borderRadius: '10px',
+        padding: '1.5rem',
+        marginBottom: '1.5rem',
+        transition: 'all 0.3s ease'
+      }}>
+        <h2 style={{ color: '#d2bc8f' }}>Marque os sinais observados durante a call:</h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '0.5rem',
+          marginTop: '1rem'
+        }}>
           {markers.map((item, index) => (
-            <label key={index}>
+            <label key={index} style={{
+              display: 'flex',
+              alignItems: 'center',
+              padding: '0.5rem',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              transition: 'background-color 0.2s ease'
+            }}>
               <input
                 type="checkbox"
                 onChange={() => handleCheck(item.label, item.profile)}
                 checked={selected.some((s) => s.label === item.label)}
+                style={{
+                  width: '18px',
+                  height: '18px',
+                  marginRight: '0.75rem',
+                  accentColor: '#d2bc8f'
+                }}
               />
               {item.label}
             </label>
@@ -575,15 +671,42 @@ export default function CXconversão() {
             const count = profileCount[profileKey];
             
             return (
-              <div key={profileKey} className={`card profile-${profileKey.toLowerCase()}`}>
-                <div className="card-header">
-                  <div>
-                    <h2>{suggestion.label} ({count} indicadores)</h2>
+              <div key={profileKey} style={{
+                background: '#1a2332',
+                border: '1px solid #333',
+                borderLeft: profileKey === 'D' ? '4px solid #ff6b6b' :
+                           profileKey === 'I' ? '4px solid #ffd43b' :
+                           profileKey === 'S' ? '4px solid #51cf66' :
+                           '4px solid #339af0',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                marginBottom: '1.5rem'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'flex-start',
+                  marginBottom: '1rem'
+                }}>
+                  <div style={{ flex: 1 }}>
+                    <h2 style={{ color: '#d2bc8f', margin: '0 0 0.5rem 0' }}>
+                      {suggestion.label} ({count} indicadores)
+                    </h2>
                     <p>{suggestion.approach}</p>
                     <p>{suggestion.trigger}</p>
                   </div>
                   <div style={{display: 'flex', gap: '0.5rem', flexDirection: 'column'}}>
-                    <button onClick={() => toggleExpand(profileKey)}>
+                    <button onClick={() => toggleExpand(profileKey)} style={{
+                      background: '#d2bc8f',
+                      color: '#0c121c',
+                      border: 'none',
+                      padding: '0.75rem 1.5rem',
+                      borderRadius: '8px',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease',
+                      whiteSpace: 'nowrap'
+                    }}>
                       {expandedProfiles.includes(profileKey) ? 'Ocultar Conteúdo' : 'Ver Conteúdo'}
                     </button>
                   </div>
@@ -591,13 +714,19 @@ export default function CXconversão() {
                 
                 {expandedProfiles.includes(profileKey) && (
                   <div style={{marginTop: '1.5rem'}}>
-                    {/* Botões para alternar entre Objeções e Scripts */}
-                    <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem'}}>
+                    {/* Botões para alternar entre Objeções, Scripts e Perguntas Abertas */}
+                    <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap'}}>
                       <button 
                         onClick={() => toggleViewMode(profileKey, 'objections')}
                         style={{
                           background: viewMode[profileKey] === 'objections' || !viewMode[profileKey] ? '#d2bc8f' : '#666',
-                          color: viewMode[profileKey] === 'objections' || !viewMode[profileKey] ? '#0c121c' : 'white'
+                          color: viewMode[profileKey] === 'objections' || !viewMode[profileKey] ? '#0c121c' : 'white',
+                          border: 'none',
+                          padding: '0.75rem 1.5rem',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease'
                         }}
                       >
                         💬 Objeções
@@ -606,10 +735,31 @@ export default function CXconversão() {
                         onClick={() => toggleViewMode(profileKey, 'scripts')}
                         style={{
                           background: viewMode[profileKey] === 'scripts' ? '#d2bc8f' : '#666',
-                          color: viewMode[profileKey] === 'scripts' ? '#0c121c' : 'white'
+                          color: viewMode[profileKey] === 'scripts' ? '#0c121c' : 'white',
+                          border: 'none',
+                          padding: '0.75rem 1.5rem',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease'
                         }}
                       >
                         📋 Script de Conexão
+                      </button>
+                      <button 
+                        onClick={() => toggleViewMode(profileKey, 'perguntas')}
+                        style={{
+                          background: viewMode[profileKey] === 'perguntas' ? '#d2bc8f' : '#666',
+                          color: viewMode[profileKey] === 'perguntas' ? '#0c121c' : 'white',
+                          border: 'none',
+                          padding: '0.75rem 1.5rem',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease'
+                        }}
+                      >
+                        🤔 Perguntas Abertas
                       </button>
                     </div>
 
@@ -618,11 +768,24 @@ export default function CXconversão() {
                       <div>
                         <h3>💬 Objeções e Respostas Calibradas:</h3>
                         {suggestion.objections.map((objection, index) => (
-                          <div key={index} className="objection">
+                          <div key={index} style={{
+                            background: '#2a3441',
+                            border: '1px solid #444',
+                            borderRadius: '8px',
+                            padding: '1rem',
+                            marginBottom: '1rem'
+                          }}>
                             <div 
-                              className="objection-title"
                               onClick={() => toggleObjection(profileKey, index)}
-                              style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                              style={{
+                                cursor: 'pointer', 
+                                display: 'flex', 
+                                justifyContent: 'space-between', 
+                                alignItems: 'center',
+                                color: '#ff6b6b',
+                                fontWeight: 'bold',
+                                marginBottom: '0.5rem'
+                              }}
                             >
                               <span>{objection.title}</span>
                               <span>{expandedObjections[`${profileKey}-${index}`] ? '▼' : '▶'}</span>
@@ -630,12 +793,28 @@ export default function CXconversão() {
                             
                             {expandedObjections[`${profileKey}-${index}`] && (
                               <div style={{marginTop: '1rem'}}>
-                                <div className="objection-question">
-                                  <div className="question-label">💬 Pergunta Calibrada:</div>
+                                <div style={{
+                                  background: '#1a2332',
+                                  borderLeft: '4px solid #4dabf7',
+                                  padding: '0.75rem',
+                                  margin: '0.5rem 0',
+                                  borderRadius: '0 6px 6px 0'
+                                }}>
+                                  <div style={{ color: '#4dabf7', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '0.25rem' }}>
+                                    💬 Pergunta Calibrada:
+                                  </div>
                                   <em>"{objection.question}"</em>
                                 </div>
-                                <div className="objection-response">
-                                  <div className="response-label">💡 Resposta Adaptada:</div>
+                                <div style={{
+                                  background: '#1a2332',
+                                  borderLeft: '4px solid #51cf66',
+                                  padding: '0.75rem',
+                                  margin: '0.5rem 0',
+                                  borderRadius: '0 6px 6px 0'
+                                }}>
+                                  <div style={{ color: '#51cf66', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '0.25rem' }}>
+                                    💡 Resposta Adaptada:
+                                  </div>
                                   "{objection.response}"
                                 </div>
                               </div>
@@ -645,17 +824,84 @@ export default function CXconversão() {
                       </div>
                     )}
 
+                    {/* Seção de Perguntas Abertas */}
+                    {viewMode[profileKey] === 'perguntas' && (
+                      <div>
+                        <h3>🤔 {suggestion.perguntas_abertas.titulo}:</h3>
+                        <div style={{
+                          background: '#2a3441',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1.5rem',
+                          marginBottom: '1.5rem'
+                        }}>
+                          <div style={{marginBottom: '1rem'}}>
+                            <p><strong>🎯 Objetivo:</strong> {suggestion.perguntas_abertas.objetivo}</p>
+                            <p><strong>🔍 Características:</strong> {suggestion.perguntas_abertas.caracteristicas}</p>
+                          </div>
+                          
+                          <div>
+                            <strong style={{color: '#d2bc8f', fontSize: '1.1rem'}}>📝 Perguntas Estratégicas:</strong>
+                            <ul style={{marginTop: '1rem', listStyle: 'none', padding: 0}}>
+                              {suggestion.perguntas_abertas.perguntas.map((pergunta, idx) => (
+                                <li key={idx} style={{
+                                  background: '#1a2332',
+                                  borderLeft: '4px solid #d2bc8f',
+                                  padding: '1rem',
+                                  margin: '0.75rem 0',
+                                  borderRadius: '0 8px 8px 0',
+                                  fontSize: '1rem',
+                                  lineHeight: '1.5'
+                                }}>
+                                  <span style={{color: '#d2bc8f', fontWeight: 'bold', marginRight: '0.5rem'}}>
+                                    {idx + 1}.
+                                  </span>
+                                  <em>"{pergunta}"</em>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          
+                          <div style={{
+                            marginTop: '1.5rem',
+                            padding: '1rem',
+                            background: '#1a2332',
+                            borderRadius: '8px',
+                            border: '1px solid #333'
+                          }}>
+                            <strong style={{color: '#51cf66'}}>💡 Dica de Uso:</strong>
+                            <p style={{margin: '0.5rem 0 0 0', color: '#ccc'}}>
+                              Use estas perguntas para quebrar o gelo, criar conexão e entender as motivações profundas da pessoa antes de partir para o SPIN Selling.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Seção de Scripts */}
                     {viewMode[profileKey] === 'scripts' && (
                       <div>
                         <h3>📋 Script de Conexão e Diagnóstico:</h3>
                         
                         {/* Objetivo do Perfil */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'objetivo')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>🎯 OBJETIVO DO PERFIL</strong></span>
                             <span>{expandedScripts[`${profileKey}-objetivo`] ? '▼' : '▶'}</span>
@@ -672,11 +918,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* Abertura */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'abertura')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>🚀 {suggestion.script.abertura.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-abertura`] ? '▼' : '▶'}</span>
@@ -697,11 +956,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* SPIN - Situação */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'situacao')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>📊 {suggestion.script.spin.situacao.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-situacao`] ? '▼' : '▶'}</span>
@@ -726,11 +998,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* SPIN - Problema */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'problema')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>❗ {suggestion.script.spin.problema.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-problema`] ? '▼' : '▶'}</span>
@@ -755,11 +1040,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* SPIN - Implicação */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'implicacao')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>⚠️ {suggestion.script.spin.implicacao.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-implicacao`] ? '▼' : '▶'}</span>
@@ -784,11 +1082,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* SPIN - Necessidade */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'necessidade')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>✅ {suggestion.script.spin.necessidade.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-necessidade`] ? '▼' : '▶'}</span>
@@ -813,11 +1124,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* Apresentação do Método */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'apresentacao')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>💡 {suggestion.script.apresentacao.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-apresentacao`] ? '▼' : '▶'}</span>
@@ -835,11 +1159,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* Chamada para Ação */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'chamada')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>🎯 {suggestion.script.chamada.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-chamada`] ? '▼' : '▶'}</span>
@@ -856,11 +1193,24 @@ export default function CXconversão() {
                         </div>
 
                         {/* Encaminhamento */}
-                        <div className="script-section">
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
                           <div 
-                            className="script-title"
                             onClick={() => toggleScript(profileKey, 'encaminhamento')}
-                            style={{cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
                           >
                             <span><strong>🔄 {suggestion.script.encaminhamento.titulo}</strong></span>
                             <span>{expandedScripts[`${profileKey}-encaminhamento`] ? '▼' : '▶'}</span>
@@ -887,7 +1237,14 @@ export default function CXconversão() {
 
       {/* Estado inicial */}
       {sortedProfiles.length === 0 && (
-        <div className="empty-state">
+        <div style={{
+          textAlign: 'center',
+          padding: '3rem',
+          color: '#888',
+          background: '#1a2332',
+          borderRadius: '10px',
+          border: '2px dashed #444'
+        }}>
           <h2>Análise em Tempo Real</h2>
           <p>Marque os sinais comportamentais observados para receber as estratégias de conversão personalizadas.</p>
         </div>
