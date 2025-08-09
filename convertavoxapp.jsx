@@ -714,7 +714,7 @@ export default function CXconversão() {
                 
                 {expandedProfiles.includes(profileKey) && (
                   <div style={{marginTop: '1.5rem'}}>
-                    {/* Botões para alternar entre Objeções, Scripts e Perguntas Abertas */}
+                    {/* Botões para alternar entre as três opções */}
                     <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap'}}>
                       <button 
                         onClick={() => toggleViewMode(profileKey, 'objections')}
