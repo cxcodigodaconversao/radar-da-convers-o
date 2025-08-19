@@ -6,8 +6,10 @@ Sistema de análise comportamental para conversão em calls 1:1 baseado na metod
 
 - **Radar Comportamental**: 12 indicadores para identificação de perfis DISC
 - **Análise em Tempo Real**: Identificação automática dos perfis dominantes
-- **Objeções Calibradas**: Respostas personalizadas por perfil comportamental
+- **Objeções Calibradas**: 36+ respostas personalizadas por perfil comportamental
 - **Scripts de Conexão**: Metodologia SPIN completa adaptada por perfil
+- **Perguntas Abertas Estratégicas**: 5 perguntas por perfil para quebrar o gelo
+- **Social Selling**: Estratégias completas para cada perfil DISC
 - **Interface Responsiva**: Funciona perfeitamente em desktop e mobile
 
 ## 🎯 Perfis DISC Suportados
@@ -81,8 +83,12 @@ cxconversao/
 
 1. **Marcar Indicadores**: Selecione os sinais comportamentais observados durante a call
 2. **Ver Análise**: O sistema identifica automaticamente os perfis DISC dominantes
-3. **Escolher Estratégia**: Alterne entre "Objeções" e "Scripts de Conexão"
-4. **Aplicar Técnicas**: Use as respostas calibradas e metodologia SPIN adaptada
+3. **Escolher Estratégia**: Alterne entre as 4 abas:
+   - 💬 **Objeções**: Respostas calibradas para cada objeção comum
+   - 📋 **Script de Conexão**: Metodologia SPIN adaptada
+   - 🤔 **Perguntas Abertas**: Para quebrar o gelo e criar conexão
+   - 📊 **Social Selling**: Estratégias completas para redes sociais
+4. **Aplicar Técnicas**: Use as respostas calibradas e metodologia adaptada
 
 ## 🔧 Personalização
 
@@ -107,6 +113,28 @@ Para personalizar o sistema:
 - **I** (Implicação): Mostrar consequências da inação
 - **N** (Necessidade): Ativar desejo de solução
 
+### Social Selling
+- **Estratégia de Aproximação**: Como abordar cada perfil
+- **Conteúdo para Engajamento**: Que tipo de posts criar
+- **Scripts para DM**: Mensagens personalizadas
+- **Timing e Frequência**: Quando e como postar
+- **Gatilhos Psicológicos**: O que ativa cada perfil
+
+## 🎯 Novidades da Versão Atual
+
+### ✅ Funcionalidades Implementadas:
+- **4 abas completas** por perfil DISC
+- **36+ objeções** com perguntas calibradas e respostas adaptadas
+- **Scripts SPIN completos** para cada perfil
+- **5 perguntas abertas estratégicas** por perfil
+- **Social Selling completo** com 5 seções por perfil:
+  - Estratégia de Aproximação
+  - Conteúdo para Engajamento
+  - Scripts para DM
+  - Timing e Frequência
+  - **Gatilhos Psicológicos** (como solicitado)
+- **Interface otimizada** e responsiva
+
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
@@ -128,3 +156,5 @@ Para dúvidas ou suporte, entre em contato através das issues do GitHub.
 ---
 
 **CXconversão** - Sistema de Análise Comportamental para Conversão em Calls 1:1
+
+🎯 **Tudo pronto para GitHub + Netlify!**
