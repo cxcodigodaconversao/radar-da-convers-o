@@ -32,6 +32,73 @@ const suggestions = {
         "Onde você acha que está perdendo mais tempo ou dinheiro no momento?"
       ]
     },
+    social_selling: {
+      titulo: "Estratégia de Social Selling",
+      objetivo: "conquistar perfis dominantes através de autoridade, resultados comprovados e abordagem direta",
+      caracteristicas: "Foco em ROI, eficiência e liderança",
+      estrategia_aproximacao: {
+        titulo: "🎯 ESTRATÉGIA DE APROXIMAÇÃO",
+        descricao: "Demonstre autoridade e resultados concretos desde o primeiro contato",
+        tacticas: [
+          "Compartilhe cases de sucesso com números específicos",
+          "Comente em posts deles com insights valiosos (não elogios vazios)",
+          "Envie conteúdo sobre otimização e eficiência",
+          "Use dados e estatísticas nas interações",
+          "Seja breve e objetivo em todas as comunicações"
+        ]
+      },
+      conteudo_engajamento: {
+        titulo: "📊 CONTEÚDO PARA ENGAJAMENTO",
+        descricao: "Tipos de posts que atraem e engajam perfis dominantes",
+        tipos: [
+          "Posts com resultados numéricos (ROI, crescimento, economia de tempo)",
+          "Comparativos de antes vs depois com métricas",
+          "Estratégias de otimização e automação",
+          "Cases de liderança e tomada de decisão",
+          "Conteúdos sobre tendências de mercado com análises objetivas"
+        ]
+      },
+      scripts_dm: {
+        titulo: "💬 SCRIPTS PARA MENSAGEM DIRETA",
+        descricao: "Abordagens diretas e focadas em resultado",
+        scripts: [
+          {
+            situacao: "Primeiro contato - Case de sucesso",
+            script: "Oi [Nome], vi seus posts sobre [área específica]. Acabei de ajudar um empresário do mesmo setor a aumentar o faturamento em 47% em 90 dias. Te mando o case se tiver interesse em ver a estratégia. Vale 2 minutos?"
+          },
+          {
+            situacao: "Follow-up - Oportunidade de otimização",
+            script: "[Nome], identifiquei 3 pontos de otimização no seu [processo/estratégia] que podem gerar R$ [valor] extras por mês. Quer que eu grave um áudio rápido explicando?"
+          },
+          {
+            situacao: "Convite para call - Foco em resultado",
+            script: "Baseado no que conversamos, posso te mostrar exatamente como replicar os resultados que mencionei. São 20 min de call objetiva, sem enrolação. Terça 15h ou quarta 10h?"
+          }
+        ]
+      },
+      timing_frequencia: {
+        titulo: "⏰ TIMING E FREQUÊNCIA",
+        descricao: "Quando e com que frequência abordar",
+        diretrizes: [
+          "Responda rapidamente (perfis D valorizam agilidade)",
+          "Poste conteúdos de manhã cedo (6h-8h) ou final do dia (18h-20h)",
+          "Mantenha frequência alta mas sempre com valor",
+          "Evite finais de semana (focam no trabalho durante a semana)",
+          "Use calls para ação claras e diretas em todos os posts"
+        ]
+      },
+      gatilhos_psicologicos: {
+        titulo: "🧠 GATILHOS PSICOLÓGICOS",
+        descricao: "Elementos que ativam o interesse de perfis dominantes",
+        gatilhos: [
+          "Escassez: 'Apenas para 5 empresários'",
+          "Autoridade: 'Método usado por líderes do setor'",
+          "Resultado: 'ROI comprovado de 300%'",
+          "Urgência: 'Oportunidade limitada até sexta'",
+          "Exclusividade: 'Estratégia não divulgada publicamente'"
+        ]
+      }
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa prática, impaciente e direta.",
@@ -163,6 +230,73 @@ const suggestions = {
         "Como você imagina que seu negócio estará quando tudo estiver do jeito que sonha?"
       ]
     },
+    social_selling: {
+      titulo: "Estratégia de Social Selling",
+      objetivo: "conquistar perfis influentes através de conexão emocional, reconhecimento e construção de comunidade",
+      caracteristicas: "Foco em relacionamento, inspiração e pertencimento",
+      estrategia_aproximacao: {
+        titulo: "🌟 ESTRATÉGIA DE APROXIMAÇÃO",
+        descricao: "Conecte com autenticidade e crie senso de comunidade",
+        tacticas: [
+          "Comente genuinamente nos posts com emojis e entusiasmo",
+          "Compartilhe histórias inspiradoras de transformação",
+          "Use stories interativos (enquetes, perguntas, caixinha)",
+          "Reconheça publicamente o trabalho da pessoa",
+          "Convide para lives, eventos e conexões em grupo"
+        ]
+      },
+      conteudo_engajamento: {
+        titulo: "🎨 CONTEÚDO PARA ENGAJAMENTO",
+        descricao: "Tipos de posts que atraem e engajam perfis influentes",
+        tipos: [
+          "Histórias de transformação pessoal e profissional",
+          "Behind the scenes da sua jornada",
+          "Posts colaborativos e menções de parceiros",
+          "Conteúdos sobre superação e mindset",
+          "Celebrações de conquistas (suas e dos outros)"
+        ]
+      },
+      scripts_dm: {
+        titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA",
+        descricao: "Abordagens calorosas e inspiradoras",
+        scripts: [
+          {
+            situacao: "Primeiro contato - Reconhecimento",
+            script: "Oi [Nome]! 🌟 Que energia incrível nos seus posts! Você realmente inspira as pessoas. Acabei de ajudar alguém com o mesmo perfil que o seu a transformar essa energia em resultados incríveis. Te conto essa história?"
+          },
+          {
+            situacao: "Follow-up - História inspiradora",
+            script: "[Nome], lembrei de você quando vi o resultado de uma cliente: ela também tinha essa energia contagiante e conseguiu impactar mais de 10 mil pessoas em 3 meses! Quer que eu conte como ela fez? 😍"
+          },
+          {
+            situacao: "Convite para call - Tom colaborativo",
+            script: "Que tal a gente conversar num bate-papo descontraído? 30 minutinhos para trocar experiências e ver como podemos criar algo incrível juntos. Você vai adorar essa conversa! ✨"
+          }
+        ]
+      },
+      timing_frequencia: {
+        titulo: "🕐 TIMING E FREQUÊNCIA",
+        descricao: "Quando e com que frequência abordar",
+        diretrizes: [
+          "Interaja bastante nos stories (perfis I amam interação)",
+          "Poste nos horários de maior movimento (12h-14h e 19h-21h)",
+          "Use muito stories e conteúdo dinâmico",
+          "Seja presente nos fins de semana (momento mais relaxado)",
+          "Mantenha tom sempre positivo e energético"
+        ]
+      },
+      gatilhos_psicologicos: {
+        titulo: "💫 GATILHOS PSICOLÓGICOS",
+        descricao: "Elementos que ativam o interesse de perfis influentes",
+        gatilhos: [
+          "Pertencimento: 'Faça parte desta comunidade especial'",
+          "Reconhecimento: 'Para pessoas com seu talento único'",
+          "Inspiração: 'Transforme vidas como você sempre sonhou'",
+          "Colaboração: 'Vamos criar algo incrível juntos'",
+          "Impacto: 'Seu potencial pode inspirar milhares'"
+        ]
+      }
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa carismática, criativa, expressiva e guiada por emoções, reconhecimento e conexão humana.",
@@ -292,6 +426,73 @@ const suggestions = {
         "O que é mais importante para você quando decide trabalhar com alguém?",
         "Quais passos você gostaria de ver antes de tomar uma decisão importante?"
       ]
+    },
+    social_selling: {
+      titulo: "Estratégia de Social Selling",
+      objetivo: "conquistar perfis estáveis através de confiança, processo estruturado e relacionamento duradouro",
+      caracteristicas: "Foco em segurança, estabilidade e confiança",
+      estrategia_aproximacao: {
+        titulo: "🤝 ESTRATÉGIA DE APROXIMAÇÃO",
+        descricao: "Construa confiança gradualmente e demonstre estabilidade",
+        tacticas: [
+          "Interaja consistentemente ao longo do tempo",
+          "Compartilhe conteúdo sobre processos e metodologias",
+          "Mostre testimonials e cases de longo prazo",
+          "Use abordagem gradual e sem pressão",
+          "Demonstre estabilidade e presença constante"
+        ]
+      },
+      conteudo_engajamento: {
+        titulo: "📚 CONTEÚDO PARA ENGAJAMENTO",
+        descricao: "Tipos de posts que atraem e engajam perfis estáveis",
+        tipos: [
+          "Tutoriais passo a passo e guias práticos",
+          "Conteúdos sobre organização e planejamento",
+          "Cases de transformação gradual e sustentável",
+          "Posts sobre família, valores e propósito",
+          "Conteúdos educativos e de desenvolvimento pessoal"
+        ]
+      },
+      scripts_dm: {
+        titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA",
+        descricao: "Abordagens suaves e respeitosas",
+        scripts: [
+          {
+            situacao: "Primeiro contato - Abordagem suave",
+            script: "Oi [Nome], tudo bem? Espero que esteja tendo uma boa semana. Vi seus posts e admiro a consistência do seu trabalho. Posso te fazer uma pergunta sobre sua área de atuação? Sem pressa, quando for conveniente pra você."
+          },
+          {
+            situacao: "Follow-up - Compartilhando recurso",
+            script: "Oi [Nome], como você está? Lembrei de você quando organizei este material sobre [tema relevante]. Achei que poderia ser útil pra você. Posso enviar sem compromisso algum."
+          },
+          {
+            situacao: "Convite para call - Tom acolhedor",
+            script: "Se quiser, podemos conversar com calma sobre sua situação atual. Sem pressão, apenas uma conversa tranquila de 30 minutos. O que acha? Podemos agendar quando for melhor pra você."
+          }
+        ]
+      },
+      timing_frequencia: {
+        titulo: "⏰ TIMING E FREQUÊNCIA",
+        descricao: "Quando e com que frequência abordar",
+        diretrizes: [
+          "Mantenha frequência consistente mas respeitosa",
+          "Poste em horários estáveis (manhã: 8h-10h, tarde: 15h-17h)",
+          "Evite bombardeio de mensagens",
+          "Respeite tempo de resposta (não cobre rapidez)",
+          "Use abordagem de relacionamento de longo prazo"
+        ]
+      },
+      gatilhos_psicologicos: {
+        titulo: "🛡️ GATILHOS PSICOLÓGICOS",
+        descricao: "Elementos que ativam o interesse de perfis estáveis",
+        gatilhos: [
+          "Segurança: 'Processo testado e aprovado'",
+          "Confiança: 'Acompanhamento do início ao fim'",
+          "Estabilidade: 'Método consistente e duradouro'",
+          "Apoio: 'Você não estará sozinho nessa jornada'",
+          "Gradualidade: 'Implementação passo a passo'"
+        ]
+      }
     },
     script: {
       objetivo: {
@@ -424,6 +625,73 @@ const suggestions = {
         "Qual seria, para você, o processo ideal para resolver esse desafio?"
       ]
     },
+    social_selling: {
+      titulo: "Estratégia de Social Selling",
+      objetivo: "conquistar perfis conformes através de dados, análises técnicas e prova social baseada em evidências",
+      caracteristicas: "Foco em dados, método e validação técnica",
+      estrategia_aproximacao: {
+        titulo: "📊 ESTRATÉGIA DE APROXIMAÇÃO",
+        descricao: "Use dados, análises e conteúdo técnico para gerar credibilidade",
+        tacticas: [
+          "Compartilhe estudos de caso com dados detalhados",
+          "Comente com insights técnicos e análises fundamentadas",
+          "Use infográficos e dados estatísticos",
+          "Cite fontes confiáveis e pesquisas relevantes",
+          "Demonstre conhecimento técnico aprofundado"
+        ]
+      },
+      conteudo_engajamento: {
+        titulo: "📈 CONTEÚDO PARA ENGAJAMENTO",
+        descricao: "Tipos de posts que atraem e engajam perfis conformes",
+        tipos: [
+          "Análises de mercado com dados e estatísticas",
+          "Comparativos técnicos e benchmarks",
+          "Studies de caso com metodologia detalhada",
+          "Conteúdos educativos com base científica",
+          "Reviews técnicas e avaliações objetivas"
+        ]
+      },
+      scripts_dm: {
+        titulo: "💼 SCRIPTS PARA MENSAGEM DIRETA",
+        descricao: "Abordagens técnicas e baseadas em evidências",
+        scripts: [
+          {
+            situacao: "Primeiro contato - Análise técnica",
+            script: "Olá [Nome], analisei alguns de seus posts sobre [área específica] e identifiquei pontos interessantes. Recentemente conduzi um estudo que mostra uma oportunidade de otimização em [área]. Posso compartilhar os dados principais?"
+          },
+          {
+            situacao: "Follow-up - Dados específicos",
+            script: "Oi [Nome], conforme mencionei, segue uma análise que fiz sobre [tópico relevante]. Os dados mostram que empresas do seu setor podem melhorar performance em até 34% com ajustes específicos. Interessado nos detalhes?"
+          },
+          {
+            situacao: "Convite para call - Foco em metodologia",
+            script: "Baseado em nossos contatos, posso apresentar uma análise detalhada da sua situação atual. 30 minutos de conversa técnica para mapear oportunidades com dados concretos. Interesse em agendar?"
+          }
+        ]
+      },
+      timing_frequencia: {
+        titulo: "🕘 TIMING E FREQUÊNCIA",
+        descricao: "Quando e com que frequência abordar",
+        diretrizes: [
+          "Foque em horário comercial (9h-17h em dias úteis)",
+          "Envie conteúdo técnico de segunda a sexta",
+          "Mantenha frequência regular mas não excessiva",
+          "Responda com precisão e detalhamento",
+          "Evite abordagens em finais de semana"
+        ]
+      },
+      gatilhos_psicologicos: {
+        titulo: "🔬 GATILHOS PSICOLÓGICOS",
+        descricao: "Elementos que ativam o interesse de perfis conformes",
+        gatilhos: [
+          "Prova social: 'Validado por 500+ empresas'",
+          "Dados: 'Melhoria comprovada de 47% em eficiência'",
+          "Metodologia: 'Processo certificado e estruturado'",
+          "Benchmark: 'Supera padrões do mercado em 3x'",
+          "Precisão: 'Análise detalhada em 15 pontos'"
+        ]
+      }
+    },
     script: {
       objetivo: {
         caracteristicas: "Pessoa analítica, lógica, objetiva, exigente e crítica.",
@@ -546,7 +814,8 @@ export default function CXconversão() {
   const [expandedProfiles, setExpandedProfiles] = useState([]);
   const [expandedObjections, setExpandedObjections] = useState({});
   const [expandedScripts, setExpandedScripts] = useState({});
-  const [viewMode, setViewMode] = useState({}); // 'objections' or 'scripts' or 'perguntas'
+  const [expandedSocialSelling, setExpandedSocialSelling] = useState({});
+  const [viewMode, setViewMode] = useState({}); // 'objections' or 'scripts' or 'perguntas' or 'social'
 
   const handleCheck = (label, profile) => {
     const exists = selected.find((s) => s.label === label);
@@ -578,6 +847,14 @@ export default function CXconversão() {
   const toggleScript = (profile, section) => {
     const key = `${profile}-${section}`;
     setExpandedScripts(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
+  const toggleSocialSelling = (profile, section) => {
+    const key = `${profile}-${section}`;
+    setExpandedSocialSelling(prev => ({
       ...prev,
       [key]: !prev[key]
     }));
@@ -714,7 +991,7 @@ export default function CXconversão() {
                 
                 {expandedProfiles.includes(profileKey) && (
                   <div style={{marginTop: '1.5rem'}}>
-                    {/* Botões para alternar entre Objeções, Scripts e Perguntas */}
+                    {/* Botões para alternar entre as 4 abas */}
                     <div style={{display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap'}}>
                       <button 
                         onClick={() => toggleViewMode(profileKey, 'objections')}
@@ -722,11 +999,12 @@ export default function CXconversão() {
                           background: viewMode[profileKey] === 'objections' || !viewMode[profileKey] ? '#d2bc8f' : '#666',
                           color: viewMode[profileKey] === 'objections' || !viewMode[profileKey] ? '#0c121c' : 'white',
                           border: 'none',
-                          padding: '0.75rem 1.5rem',
+                          padding: '0.75rem 1rem',
                           borderRadius: '8px',
                           fontWeight: 'bold',
                           cursor: 'pointer',
-                          transition: 'all 0.3s ease'
+                          transition: 'all 0.3s ease',
+                          fontSize: '0.9rem'
                         }}
                       >
                         💬 Objeções
@@ -737,11 +1015,12 @@ export default function CXconversão() {
                           background: viewMode[profileKey] === 'scripts' ? '#d2bc8f' : '#666',
                           color: viewMode[profileKey] === 'scripts' ? '#0c121c' : 'white',
                           border: 'none',
-                          padding: '0.75rem 1.5rem',
+                          padding: '0.75rem 1rem',
                           borderRadius: '8px',
                           fontWeight: 'bold',
                           cursor: 'pointer',
-                          transition: 'all 0.3s ease'
+                          transition: 'all 0.3s ease',
+                          fontSize: '0.9rem'
                         }}
                       >
                         📋 Script de Conexão
@@ -752,14 +1031,31 @@ export default function CXconversão() {
                           background: viewMode[profileKey] === 'perguntas' ? '#d2bc8f' : '#666',
                           color: viewMode[profileKey] === 'perguntas' ? '#0c121c' : 'white',
                           border: 'none',
-                          padding: '0.75rem 1.5rem',
+                          padding: '0.75rem 1rem',
                           borderRadius: '8px',
                           fontWeight: 'bold',
                           cursor: 'pointer',
-                          transition: 'all 0.3s ease'
+                          transition: 'all 0.3s ease',
+                          fontSize: '0.9rem'
                         }}
                       >
                         🤔 Perguntas Abertas
+                      </button>
+                      <button 
+                        onClick={() => toggleViewMode(profileKey, 'social')}
+                        style={{
+                          background: viewMode[profileKey] === 'social' ? '#d2bc8f' : '#666',
+                          color: viewMode[profileKey] === 'social' ? '#0c121c' : 'white',
+                          border: 'none',
+                          padding: '0.75rem 1rem',
+                          borderRadius: '8px',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease',
+                          fontSize: '0.9rem'
+                        }}
+                      >
+                        📊 Social Selling
                       </button>
                     </div>
 
@@ -878,7 +1174,238 @@ export default function CXconversão() {
                       </div>
                     )}
 
-                    {/* Seção de Scripts */}
+                    {/* Seção de Social Selling */}
+                    {viewMode[profileKey] === 'social' && (
+                      <div>
+                        <h3>📊 {suggestion.social_selling.titulo}:</h3>
+                        <div style={{
+                          background: '#2a3441',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1.5rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div style={{marginBottom: '1rem'}}>
+                            <p><strong>🎯 Objetivo:</strong> {suggestion.social_selling.objetivo}</p>
+                            <p><strong>🔍 Características:</strong> {suggestion.social_selling.caracteristicas}</p>
+                          </div>
+                        </div>
+
+                        {/* Estratégia de Aproximação */}
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div 
+                            onClick={() => toggleSocialSelling(profileKey, 'aproximacao')}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
+                          >
+                            <span><strong>{suggestion.social_selling.estrategia_aproximacao.titulo}</strong></span>
+                            <span>{expandedSocialSelling[`${profileKey}-aproximacao`] ? '▼' : '▶'}</span>
+                          </div>
+                          
+                          {expandedSocialSelling[`${profileKey}-aproximacao`] && (
+                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                              <p><strong>Descrição:</strong> {suggestion.social_selling.estrategia_aproximacao.descricao}</p>
+                              <div style={{marginTop: '1rem'}}>
+                                <strong>Táticas:</strong>
+                                <ul style={{marginTop: '0.5rem'}}>
+                                  {suggestion.social_selling.estrategia_aproximacao.tacticas.map((tatica, idx) => (
+                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
+                                      {tatica}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Conteúdo para Engajamento */}
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div 
+                            onClick={() => toggleSocialSelling(profileKey, 'conteudo')}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
+                          >
+                            <span><strong>{suggestion.social_selling.conteudo_engajamento.titulo}</strong></span>
+                            <span>{expandedSocialSelling[`${profileKey}-conteudo`] ? '▼' : '▶'}</span>
+                          </div>
+                          
+                          {expandedSocialSelling[`${profileKey}-conteudo`] && (
+                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                              <p><strong>Descrição:</strong> {suggestion.social_selling.conteudo_engajamento.descricao}</p>
+                              <div style={{marginTop: '1rem'}}>
+                                <strong>Tipos de Conteúdo:</strong>
+                                <ul style={{marginTop: '0.5rem'}}>
+                                  {suggestion.social_selling.conteudo_engajamento.tipos.map((tipo, idx) => (
+                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
+                                      {tipo}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Scripts para DM */}
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div 
+                            onClick={() => toggleSocialSelling(profileKey, 'scripts')}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
+                          >
+                            <span><strong>{suggestion.social_selling.scripts_dm.titulo}</strong></span>
+                            <span>{expandedSocialSelling[`${profileKey}-scripts`] ? '▼' : '▶'}</span>
+                          </div>
+                          
+                          {expandedSocialSelling[`${profileKey}-scripts`] && (
+                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                              <p><strong>Descrição:</strong> {suggestion.social_selling.scripts_dm.descricao}</p>
+                              <div style={{marginTop: '1rem'}}>
+                                <strong>Scripts:</strong>
+                                {suggestion.social_selling.scripts_dm.scripts.map((script, idx) => (
+                                  <div key={idx} style={{
+                                    background: '#1a2332',
+                                    borderLeft: '4px solid #d2bc8f',
+                                    padding: '1rem',
+                                    margin: '0.75rem 0',
+                                    borderRadius: '0 8px 8px 0'
+                                  }}>
+                                    <div style={{color: '#d2bc8f', fontWeight: 'bold', marginBottom: '0.5rem'}}>
+                                      {script.situacao}
+                                    </div>
+                                    <em>"{script.script}"</em>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Timing e Frequência */}
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div 
+                            onClick={() => toggleSocialSelling(profileKey, 'timing')}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
+                          >
+                            <span><strong>{suggestion.social_selling.timing_frequencia.titulo}</strong></span>
+                            <span>{expandedSocialSelling[`${profileKey}-timing`] ? '▼' : '▶'}</span>
+                          </div>
+                          
+                          {expandedSocialSelling[`${profileKey}-timing`] && (
+                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                              <p><strong>Descrição:</strong> {suggestion.social_selling.timing_frequencia.descricao}</p>
+                              <div style={{marginTop: '1rem'}}>
+                                <strong>Diretrizes:</strong>
+                                <ul style={{marginTop: '0.5rem'}}>
+                                  {suggestion.social_selling.timing_frequencia.diretrizes.map((diretriz, idx) => (
+                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
+                                      {diretriz}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Gatilhos Psicológicos */}
+                        <div style={{
+                          background: '#1a2332',
+                          border: '1px solid #444',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <div 
+                            onClick={() => toggleSocialSelling(profileKey, 'gatilhos')}
+                            style={{
+                              cursor: 'pointer', 
+                              display: 'flex', 
+                              justifyContent: 'space-between', 
+                              alignItems: 'center',
+                              color: '#d2bc8f',
+                              fontWeight: 'bold',
+                              marginBottom: '0.5rem'
+                            }}
+                          >
+                            <span><strong>{suggestion.social_selling.gatilhos_psicologicos.titulo}</strong></span>
+                            <span>{expandedSocialSelling[`${profileKey}-gatilhos`] ? '▼' : '▶'}</span>
+                          </div>
+                          
+                          {expandedSocialSelling[`${profileKey}-gatilhos`] && (
+                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                              <p><strong>Descrição:</strong> {suggestion.social_selling.gatilhos_psicologicos.descricao}</p>
+                              <div style={{marginTop: '1rem'}}>
+                                <strong>Gatilhos:</strong>
+                                <ul style={{marginTop: '0.5rem'}}>
+                                  {suggestion.social_selling.gatilhos_psicologicos.gatilhos.map((gatilho, idx) => (
+                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
+                                      <em>{gatilho}</em>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Seção de Scripts (Script de Conexão) */}
                     {viewMode[profileKey] === 'scripts' && (
                       <div>
                         <h3>📋 Script de Conexão e Diagnóstico:</h3>
@@ -955,276 +1482,99 @@ export default function CXconversão() {
                           )}
                         </div>
 
-                        {/* SPIN - Situação */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'situacao')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>📊 {suggestion.script.spin.situacao.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-situacao`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-situacao`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <p><strong>Objetivo:</strong> {suggestion.script.spin.situacao.objetivo}</p>
-                              <div style={{marginTop: '1rem'}}>
-                                <strong>Perguntas:</strong>
-                                <ul style={{marginTop: '0.5rem'}}>
-                                  {suggestion.script.spin.situacao.perguntas.map((pergunta, idx) => (
-                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
-                                      <em>"{pergunta}"</em>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <p><strong>🎯 Gatilhos:</strong> {suggestion.script.spin.situacao.gatilhos}</p>
+                        {/* SPIN Sections */}
+                        {['situacao', 'problema', 'implicacao', 'necessidade'].map((spinType) => (
+                          <div key={spinType} style={{
+                            background: '#1a2332',
+                            border: '1px solid #444',
+                            borderRadius: '8px',
+                            padding: '1rem',
+                            marginBottom: '1rem'
+                          }}>
+                            <div 
+                              onClick={() => toggleScript(profileKey, spinType)}
+                              style={{
+                                cursor: 'pointer', 
+                                display: 'flex', 
+                                justifyContent: 'space-between', 
+                                alignItems: 'center',
+                                color: '#d2bc8f',
+                                fontWeight: 'bold',
+                                marginBottom: '0.5rem'
+                              }}
+                            >
+                              <span><strong>
+                                {spinType === 'situacao' && '📊'}
+                                {spinType === 'problema' && '❗'}
+                                {spinType === 'implicacao' && '⚠️'}
+                                {spinType === 'necessidade' && '✅'}
+                                {' ' + suggestion.script.spin[spinType].titulo}
+                              </strong></span>
+                              <span>{expandedScripts[`${profileKey}-${spinType}`] ? '▼' : '▶'}</span>
                             </div>
-                          )}
-                        </div>
+                            
+                            {expandedScripts[`${profileKey}-${spinType}`] && (
+                              <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                                <p><strong>Objetivo:</strong> {suggestion.script.spin[spinType].objetivo}</p>
+                                <div style={{marginTop: '1rem'}}>
+                                  <strong>Perguntas:</strong>
+                                  <ul style={{marginTop: '0.5rem'}}>
+                                    {suggestion.script.spin[spinType].perguntas.map((pergunta, idx) => (
+                                      <li key={idx} style={{marginBottom: '0.5rem'}}>
+                                        <em>"{pergunta}"</em>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                                <p><strong>🎯 Gatilhos:</strong> {suggestion.script.spin[spinType].gatilhos}</p>
+                              </div>
+                            )}
+                          </div>
+                        ))}
 
-                        {/* SPIN - Problema */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'problema')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>❗ {suggestion.script.spin.problema.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-problema`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-problema`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <p><strong>Objetivo:</strong> {suggestion.script.spin.problema.objetivo}</p>
-                              <div style={{marginTop: '1rem'}}>
-                                <strong>Perguntas:</strong>
-                                <ul style={{marginTop: '0.5rem'}}>
-                                  {suggestion.script.spin.problema.perguntas.map((pergunta, idx) => (
-                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
-                                      <em>"{pergunta}"</em>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <p><strong>🎯 Gatilhos:</strong> {suggestion.script.spin.problema.gatilhos}</p>
+                        {/* Outras seções do script */}
+                        {['apresentacao', 'chamada', 'encaminhamento'].map((section) => (
+                          <div key={section} style={{
+                            background: '#1a2332',
+                            border: '1px solid #444',
+                            borderRadius: '8px',
+                            padding: '1rem',
+                            marginBottom: '1rem'
+                          }}>
+                            <div 
+                              onClick={() => toggleScript(profileKey, section)}
+                              style={{
+                                cursor: 'pointer', 
+                                display: 'flex', 
+                                justifyContent: 'space-between', 
+                                alignItems: 'center',
+                                color: '#d2bc8f',
+                                fontWeight: 'bold',
+                                marginBottom: '0.5rem'
+                              }}
+                            >
+                              <span><strong>
+                                {section === 'apresentacao' && '💡'}
+                                {section === 'chamada' && '🎯'}
+                                {section === 'encaminhamento' && '🔄'}
+                                {' ' + suggestion.script[section].titulo}
+                              </strong></span>
+                              <span>{expandedScripts[`${profileKey}-${section}`] ? '▼' : '▶'}</span>
                             </div>
-                          )}
-                        </div>
-
-                        {/* SPIN - Implicação */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'implicacao')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>⚠️ {suggestion.script.spin.implicacao.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-implicacao`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-implicacao`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <p><strong>Objetivo:</strong> {suggestion.script.spin.implicacao.objetivo}</p>
-                              <div style={{marginTop: '1rem'}}>
-                                <strong>Perguntas:</strong>
-                                <ul style={{marginTop: '0.5rem'}}>
-                                  {suggestion.script.spin.implicacao.perguntas.map((pergunta, idx) => (
-                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
-                                      <em>"{pergunta}"</em>
-                                    </li>
-                                  ))}
-                                </ul>
+                            
+                            {expandedScripts[`${profileKey}-${section}`] && (
+                              <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
+                                <div style={{background: '#1a2332', padding: '1rem', borderRadius: '6px', marginBottom: section === 'apresentacao' ? '1rem' : '0'}}>
+                                  <strong>Script:</strong><br />
+                                  <em>"{suggestion.script[section].script}"</em>
+                                </div>
+                                {section === 'apresentacao' && (
+                                  <p><strong>🎯 Gatilhos:</strong> {suggestion.script[section].gatilhos}</p>
+                                )}
                               </div>
-                              <p><strong>🎯 Gatilhos:</strong> {suggestion.script.spin.implicacao.gatilhos}</p>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* SPIN - Necessidade */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'necessidade')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>✅ {suggestion.script.spin.necessidade.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-necessidade`] ? '▼' : '▶'}</span>
+                            )}
                           </div>
-                          
-                          {expandedScripts[`${profileKey}-necessidade`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <p><strong>Objetivo:</strong> {suggestion.script.spin.necessidade.objetivo}</p>
-                              <div style={{marginTop: '1rem'}}>
-                                <strong>Perguntas:</strong>
-                                <ul style={{marginTop: '0.5rem'}}>
-                                  {suggestion.script.spin.necessidade.perguntas.map((pergunta, idx) => (
-                                    <li key={idx} style={{marginBottom: '0.5rem'}}>
-                                      <em>"{pergunta}"</em>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <p><strong>🎯 Gatilhos:</strong> {suggestion.script.spin.necessidade.gatilhos}</p>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Apresentação do Método */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'apresentacao')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>💡 {suggestion.script.apresentacao.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-apresentacao`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-apresentacao`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <div style={{background: '#1a2332', padding: '1rem', borderRadius: '6px', marginBottom: '1rem'}}>
-                                <strong>Script:</strong><br />
-                                <em>"{suggestion.script.apresentacao.script}"</em>
-                              </div>
-                              <p><strong>🎯 Gatilhos:</strong> {suggestion.script.apresentacao.gatilhos}</p>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Chamada para Ação */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'chamada')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>🎯 {suggestion.script.chamada.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-chamada`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-chamada`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <div style={{background: '#1a2332', padding: '1rem', borderRadius: '6px'}}>
-                                <strong>Script:</strong><br />
-                                <em>"{suggestion.script.chamada.script}"</em>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Encaminhamento */}
-                        <div style={{
-                          background: '#1a2332',
-                          border: '1px solid #444',
-                          borderRadius: '8px',
-                          padding: '1rem',
-                          marginBottom: '1rem'
-                        }}>
-                          <div 
-                            onClick={() => toggleScript(profileKey, 'encaminhamento')}
-                            style={{
-                              cursor: 'pointer', 
-                              display: 'flex', 
-                              justifyContent: 'space-between', 
-                              alignItems: 'center',
-                              color: '#d2bc8f',
-                              fontWeight: 'bold',
-                              marginBottom: '0.5rem'
-                            }}
-                          >
-                            <span><strong>🔄 {suggestion.script.encaminhamento.titulo}</strong></span>
-                            <span>{expandedScripts[`${profileKey}-encaminhamento`] ? '▼' : '▶'}</span>
-                          </div>
-                          
-                          {expandedScripts[`${profileKey}-encaminhamento`] && (
-                            <div style={{marginTop: '1rem', padding: '1rem', background: '#2a3441', borderRadius: '8px'}}>
-                              <div style={{background: '#1a2332', padding: '1rem', borderRadius: '6px'}}>
-                                <strong>Script:</strong><br />
-                                <em>"{suggestion.script.encaminhamento.script}"</em>
-                              </div>
-                            </div>
-                          )}
-                        </div>
+                        ))}
                       </div>
                     )}
                   </div>
