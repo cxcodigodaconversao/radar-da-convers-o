@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Sistema de análise comportamental para conversão em calls 1:1",
-  "keywords": ["vendas", "conversão", "DISC", "comportamental", "objeções", "calls"],
+  "keywords": ["vendas", "conversão", "DISC", "comportamental", "objeções", "calls", "social selling"],
   "author": "CXconversão",
   "license": "MIT",
   "scripts": {
