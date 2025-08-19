@@ -59,23 +59,31 @@ const suggestions = {
         ]
       },
       scripts_dm: {
-        titulo: "💬 SCRIPTS PARA MENSAGEM DIRETA",
-        descricao: "Abordagens diretas e focadas em resultado",
-        scripts: [
-          {
-            situacao: "Primeiro contato - Case de sucesso",
-            script: "Oi [Nome], vi seus posts sobre [área específica]. Acabei de ajudar um empresário do mesmo setor a aumentar o faturamento em 47% em 90 dias. Te mando o case se tiver interesse em ver a estratégia. Vale 2 minutos?"
-          },
-          {
-            situacao: "Follow-up - Oportunidade de otimização",
-            script: "[Nome], identifiquei 3 pontos de otimização no seu [processo/estratégia] que podem gerar R$ [valor] extras por mês. Quer que eu grave um áudio rápido explicando?"
-          },
-          {
-            situacao: "Convite para call - Foco em resultado",
-            script: "Baseado no que conversamos, posso te mostrar exatamente como replicar os resultados que mencionei. São 20 min de call objetiva, sem enrolação. Terça 15h ou quarta 10h?"
-          }
-        ]
-      },
+  titulo: "💬 SCRIPTS PARA MENSAGEM DIRETA",
+  descricao: "Abordagem direta e focada em resultados",
+  scripts: [
+    {
+      situacao: "1. Primeiro contato (Conexão e pergunta abertura estratégica)",
+      script: "Oi [Nome], tudo bem? Estava aqui analisando alguns perfis de empresários de resultados, e vi o seu. Percebi que você é [área de atuação] há [tempo], focado em performance. É isso mesmo?"
+    },
+    {
+      situacao: "2. Mapeamento com dores fortes",
+      script: "Está conseguindo escalar seus resultados sem depender 100% do seu tempo pessoal, ou ainda está muito operacional no dia a dia?"
+    },
+    {
+      situacao: "3. Mapeamento qualificatório",
+      script: "Hoje, qual seu faturamento mensal? E qual meta você quer bater nos próximos 90 dias? Quanto você está disposto a investir para acelerar esse processo de crescimento?"
+    },
+    {
+      situacao: "4. Direcionamento (Características que levam para a call)",
+      script: "Perfeito, pelo que você falou, na [Nome da Empresa], desenvolvemos um sistema que já ajudou [número] empresários como você a dobrar resultados em 90 dias. É um diagnóstico de 30 minutos, sem enrolação, focado em ROI. Mapeamos exatamente onde está o gargalo e você sai com um plano de ação claro. Faz sentido pra você?"
+    },
+    {
+      situacao: "5. Marcação de call",
+      script: "Tenho horário terça às 15h ou quarta às 10h, qual funciona melhor? Fechado! Vou te enviar o link agora. É pontual, 30 minutos exatos para maximizar seu tempo. Obrigado!"
+    }
+  ]
+},
       timing_frequencia: {
         titulo: "⏰ TIMING E FREQUÊNCIA",
         descricao: "Quando e com que frequência abordar",
@@ -257,23 +265,31 @@ const suggestions = {
         ]
       },
       scripts_dm: {
-        titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA",
-        descricao: "Abordagens calorosas e inspiradoras",
-        scripts: [
-          {
-            situacao: "Primeiro contato - Reconhecimento",
-            script: "Oi [Nome]! 🌟 Que energia incrível nos seus posts! Você realmente inspira as pessoas. Acabei de ajudar alguém com o mesmo perfil que o seu a transformar essa energia em resultados incríveis. Te conto essa história?"
-          },
-          {
-            situacao: "Follow-up - História inspiradora",
-            script: "[Nome], lembrei de você quando vi o resultado de uma cliente: ela também tinha essa energia contagiante e conseguiu impactar mais de 10 mil pessoas em 3 meses! Quer que eu conte como ela fez? 😍"
-          },
-          {
-            situacao: "Convite para call - Tom colaborativo",
-            script: "Que tal a gente conversar num bate-papo descontraído? 30 minutinhos para trocar experiências e ver como podemos criar algo incrível juntos. Você vai adorar essa conversa! ✨"
-          }
-        ]
-      },
+  titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA",
+  descricao: "Abordagem calorosa e inspiradora",
+  scripts: [
+    {
+      situacao: "1. Primeiro contato (Conexão e pergunta abertura estratégica)",
+      script: "Oi [Nome], tudo bem? 😊 Estava aqui olhando alguns perfis incríveis, e o seu me chamou muita atenção! Vi que você é [área de atuação] e realmente inspira pessoas. Que energia contagiante! É isso mesmo que você faz?"
+    },
+    {
+      situacao: "2. Mapeamento com dores fortes", 
+      script: "Você sente que as pessoas ainda não percebem todo o valor incrível do que você entrega, ou já consegue mostrar isso bem e conectar de verdade com sua audiência?"
+    },
+    {
+      situacao: "3. Mapeamento qualificatório",
+      script: "Qual seu sonho mesmo com esse negócio lindo que você está construindo? Você já investiu em mentoria antes? Como foi a experiência? Se tivesse a oportunidade de realizar esse sonho, que investimento faria sentido?"
+    },
+    {
+      situacao: "4. Direcionamento (Características que levam para a call)",
+      script: "Nossa, que lindo o que você está construindo! 💕 Aqui na [Nome da Empresa], temos um processo especial que já ajudou [número] pessoas incríveis como você a impactar milhares de vidas e realizar sonhos lindos! É um momento especial de 30 minutos onde desenhamos juntos seu futuro ideal. Super inspirador! Você merece essa atenção especial. Topa viver essa experiência?"
+    },
+    {
+      situacao: "5. Marcação de call",
+      script: "Que tal terça de manhã ou quarta à tarde? O que flui melhor para você? Que maravilha! Vou te mandar o link com muito carinho. Prepare o coração para algo especial! ✨ Obrigado!"
+    }
+  ]
+},
       timing_frequencia: {
         titulo: "🕐 TIMING E FREQUÊNCIA",
         descricao: "Quando e com que frequência abordar",
@@ -454,23 +470,31 @@ const suggestions = {
         ]
       },
       scripts_dm: {
-        titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA",
-        descricao: "Abordagens suaves e respeitosas",
-        scripts: [
-          {
-            situacao: "Primeiro contato - Abordagem suave",
-            script: "Oi [Nome], tudo bem? Espero que esteja tendo uma boa semana. Vi seus posts e admiro a consistência do seu trabalho. Posso te fazer uma pergunta sobre sua área de atuação? Sem pressa, quando for conveniente pra você."
-          },
-          {
-            situacao: "Follow-up - Compartilhando recurso",
-            script: "Oi [Nome], como você está? Lembrei de você quando organizei este material sobre [tema relevante]. Achei que poderia ser útil pra você. Posso enviar sem compromisso algum."
-          },
-          {
-            situacao: "Convite para call - Tom acolhedor",
-            script: "Se quiser, podemos conversar com calma sobre sua situação atual. Sem pressão, apenas uma conversa tranquila de 30 minutos. O que acha? Podemos agendar quando for melhor pra você."
-          }
-        ]
-      },
+  titulo: "💌 SCRIPTS PARA MENSAGEM DIRETA", 
+  descricao: "Abordagem suave e respeitosa",
+  scripts: [
+    {
+      situacao: "1. Primeiro contato (Conexão e pergunta abertura estratégica)",
+      script: "Oi [Nome], tudo bem? Espero que esteja tendo uma boa semana. Estava olhando alguns perfis e o seu me chamou atenção pela consistência do trabalho. Vi que você é [área de atuação] há [tempo], sempre muito dedicado. É isso mesmo?"
+    },
+    {
+      situacao: "2. Mapeamento com dores fortes",
+      script: "Como tem sido manter esse padrão de qualidade que você tem e ao mesmo tempo conseguir crescer de forma tranquila, sem muita pressão? Está fluindo bem?"
+    },
+    {
+      situacao: "3. Mapeamento qualificatório", 
+      script: "Você prefere crescer de forma gradual e segura, ou gosta de mudanças mais rápidas? Qual seria um crescimento confortável para você nos próximos meses? Que tipo de apoio te deixaria mais tranquilo para crescer?"
+    },
+    {
+      situacao: "4. Direcionamento (Características que levam para a call)",
+      script: "Que trabalho consistente o seu! Na [Nome da Empresa], temos um processo cuidadoso que respeita o ritmo de cada pessoa. Já acompanhamos [número] profissionais como você a crescer de forma sustentável e tranquila. É um diagnóstico estruturado de 30 minutos, sem pressão nenhuma. Só para organizar ideias e dar clareza no próximo passo. Te deixaria mais tranquilo ter essa conversa?"
+    },
+    {
+      situacao: "5. Marcação de call",
+      script: "Que horário seria mais tranquilo para você? Terça ou quarta? Perfeito! Vou te enviar o link. Pode ficar tranquilo, é bem descontraído e sem pressa nenhuma. Obrigado!"
+    }
+  ]
+},
       timing_frequencia: {
         titulo: "⏰ TIMING E FREQUÊNCIA",
         descricao: "Quando e com que frequência abordar",
@@ -652,23 +676,31 @@ const suggestions = {
         ]
       },
       scripts_dm: {
-        titulo: "💼 SCRIPTS PARA MENSAGEM DIRETA",
-        descricao: "Abordagens técnicas e baseadas em evidências",
-        scripts: [
-          {
-            situacao: "Primeiro contato - Análise técnica",
-            script: "Olá [Nome], analisei alguns de seus posts sobre [área específica] e identifiquei pontos interessantes. Recentemente conduzi um estudo que mostra uma oportunidade de otimização em [área]. Posso compartilhar os dados principais?"
-          },
-          {
-            situacao: "Follow-up - Dados específicos",
-            script: "Oi [Nome], conforme mencionei, segue uma análise que fiz sobre [tópico relevante]. Os dados mostram que empresas do seu setor podem melhorar performance em até 34% com ajustes específicos. Interessado nos detalhes?"
-          },
-          {
-            situacao: "Convite para call - Foco em metodologia",
-            script: "Baseado em nossos contatos, posso apresentar uma análise detalhada da sua situação atual. 30 minutos de conversa técnica para mapear oportunidades com dados concretos. Interesse em agendar?"
-          }
-        ]
-      },
+  titulo: "💼 SCRIPTS PARA MENSAGEM DIRETA",
+  descricao: "Abordagem técnica e baseada em evidências", 
+  scripts: [
+    {
+      situacao: "1. Primeiro contato (Conexão e pergunta abertura estratégica)",
+      script: "Olá [Nome], tudo bem? Analisei alguns perfis profissionais e o seu demonstra expertise sólida. Vi que você é [área de atuação] há [tempo], com approach bem estruturado. É isso mesmo que você desenvolve?"
+    },
+    {
+      situacao: "2. Mapeamento com dores fortes",
+      script: "Você já tem dados precisos sobre onde está o principal gargalo no seu processo atual, ou ainda está na fase de análise para otimização?"
+    },
+    {
+      situacao: "3. Mapeamento qualificatório",
+      script: "Você costuma analisar métricas regularmente ou já tem um sistema de acompanhamento? Qual ROI mínimo considera viável para um investimento em [área]? Prefere ver dados e comprovações antes de tomar decisões estratégicas?"
+    },
+    {
+      situacao: "4. Direcionamento (Características que levam para a call)",
+      script: "Trabalho muito bem estruturado o seu. Na [Nome da Empresa], desenvolvemos uma metodologia baseada em [framework] que já comprovou eficácia com [número] profissionais, gerando ROI médio de [%] em [tempo]. É uma análise técnica de 30 minutos com metodologia validada. Posso enviar detalhes da estrutura antes, se preferir. Faz sentido do ponto de vista estratégico?"
+    },
+    {
+      situacao: "5. Marcação de call",
+      script: "Tenho disponibilidade terça às 15h ou quarta às 10h. Qual se adequa melhor à sua agenda? Excelente! Vou enviar o link junto com agenda estruturada do que será abordado. Tudo documentado. Obrigado!"
+    }
+  ]
+}
       timing_frequencia: {
         titulo: "🕘 TIMING E FREQUÊNCIA",
         descricao: "Quando e com que frequência abordar",
